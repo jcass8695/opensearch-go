@@ -463,7 +463,7 @@ func (w *worker) writeMeta(item BulkIndexerItem) error {
 	if err != nil {
 		return err
 	}
-	w.aux = w.aux[:0]
+	w.aux = nil
 	_, err = w.buf.WriteRune('\n')
 	if err != nil {
 		return err
@@ -518,7 +518,7 @@ func (w *worker) flush(ctx context.Context) error {
 	)
 
 	defer func() {
-		w.items = w.items[:0]
+		w.items = nil
 		w.buf.Reset()
 	}()
 
