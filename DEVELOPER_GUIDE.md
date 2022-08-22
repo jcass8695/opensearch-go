@@ -22,8 +22,8 @@ e.g. `git clone https://github.com/[your username]/opensearch-go.git`.
 
 ### Install Prerequisites
 
-#### Go 1.11
-OpenSearch Go Client builds using [Go](https://golang.org/doc/install) 1.11 at a minimum.
+#### Go 1.16
+OpenSearch Go Client builds using [Go](https://golang.org/doc/install) 1.16 at a minimum.
 
 #### Docker
 
